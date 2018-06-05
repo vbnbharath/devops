@@ -2,11 +2,17 @@
 
 <echo message ="Welcome to banking sector"/>
 
+<property name="Patch" value=""/>
+<property name="release" value="11.2.4"/>
+
+<echo message="Patch value is : ${Patch}"/>
+<echo message="release value is : ${release}"/>
+
 <target name="savings" depends="loans">
 	<echo message="Welcome to saving section"/>
 </target>
 
-<target name="loans" depends="creditcard">
+<target name="loans">
 	<echo message="Welcome to loans"/>
 </target>
 
